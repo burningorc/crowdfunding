@@ -1,0 +1,481 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+body {
+  font-family: "Commissioner", sans-serif;
+  background-color: hsl(0, 31%, 94%);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  height: 15rem;
+  background-image: url("./images/image-hero-mobile.jpg");
+  background-size: cover;
+  padding: 1.5rem 0;
+}
+.header .container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.nav {
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1rem;
+  display: none;
+}
+.nav-visible {
+  display: block;
+  box-shadow: 0 0 200px 50px rgba(0, 0, 0, 0.6);
+}
+.header .nav .nav-item {
+  padding: 1rem 1.5rem;
+}
+.header .nav .nav-item a {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.header .nav .menu-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  cursor: pointer;
+}
+.header .hamburger {
+  cursor: pointer;
+}
+.hamburger-none {
+  display: none;
+}
+.main {
+  margin: -2.3rem auto 1rem;
+}
+.mastercraft-monitor,
+.about-project,
+.donated-donors,
+.reward-popup {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.main .mastercraft-monitor {
+  background-color: white;
+  text-align: center;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  line-height: 1.5;
+}
+.master-img {
+  margin-top: -5rem;
+}
+.mastercraft-monitor .title {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.mastercraft-monitor .description {
+  margin-bottom: 1rem;
+}
+.mastercraft-monitor .back-bookmark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back-bookmark .btn {
+  border: none;
+  color: white;
+  background-color: hsl(176, 50%, 47%);
+  padding: 0.7rem 1.2rem;
+  border-radius: 5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.back-bookmark .btn:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+.back-bookmark .bookmark {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.back-bookmark .bookmark:hover {
+  opacity: 0.7;
+}
+.back-bookmark .bookmark img {
+  width: 2.7rem;
+  z-index: 1;
+}
+.back-bookmark .bookmark p {
+  background-color: rgb(196, 185, 185);
+  padding: 0.6rem 1rem 0.6rem 3rem;
+  border-radius: 5rem;
+  display: none;
+  font-weight: 500;
+}
+.img-book {
+  filter: invert(39%) sepia(27%) saturate(2327%) hue-rotate(138deg)
+    brightness(82%) contrast(84%);
+}
+.text-book {
+  color: hsl(176, 72%, 28%);
+}
+.donated-donors {
+  background-color: white;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.donated-donors .bold {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+.donated-donors .line {
+  width: 5rem;
+  height: 1px;
+  background-color: rgba(133, 133, 133, 0.3);
+  margin: 1.5rem auto;
+}
+.donated-donors .color-graph {
+  width: 100%;
+  height: 1rem;
+  background-color: rgba(179, 171, 171, 0.5);
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+}
+.donated-donors .color-left {
+  height: 100%;
+  /* width: 89%; */
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 2rem;
+}
+.about-project {
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+}
+.about-project p {
+  color: gray;
+}
+.about-project .description {
+  margin-top: 1.5rem;
+}
+.about-project .pledges {
+  margin-top: 1.5rem;
+}
+.about-project .pledges > div {
+  border: 1px solid rgba(128, 126, 126, 0.5);
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+.about-project .pledges .bamboo,
+.about-project .pledges .black-edition {
+  margin-bottom: 1rem;
+}
+.about-project .stand-pledge {
+  margin-bottom: 1.3rem;
+}
+.about-project .days-reward {
+  margin-top: 1.3rem;
+}
+.about-project .stand-pledge .pledge {
+  color: hsl(176, 50%, 47%);
+  margin-top: 0.4rem;
+  font-weight: 500;
+}
+.about-project .days-left span {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 700;
+}
+.about-project .days-reward .btn {
+  border: none;
+  background-color: hsl(176, 50%, 47%);
+  color: white;
+  margin-top: 1rem;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.about-project .days-reward .btn:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+.about-project .Mahogany {
+  opacity: 0.5;
+}
+.about-project .Mahogany .btn {
+  background-color: rgb(20, 20, 20);
+}
+.about-project .Mahogany .btn:hover {
+  background-color: rgb(20, 20, 20);
+}
+.reward-popup {
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 400px 50px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: none;
+}
+.reward-popup-block {
+  display: block;
+}
+.reward-popup .reward .container {
+  padding: 1.3rem;
+  position: relative;
+}
+.reward-popup img {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+.reward-popup h2 {
+  margin-bottom: 1rem;
+}
+.reward-popup .rewards {
+  margin-top: 1.5rem;
+}
+.reward-popup .rewards .reward {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+.reward-popup .rewards .reward + .reward {
+  margin-top: 1rem;
+}
+
+.reward-popup .reward .head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.reward-popup .reward .upper-circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.reward-popup .reward .inner-circle {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: none;
+}
+.reward-popup .reward .inner-circle-block {
+  display: block;
+}
+.reward-popup .reward .head .pledge {
+  margin-top: 0.4rem;
+  color: hsl(176, 50%, 47%);
+  font-weight: 700;
+}
+.reward-popup .reward .description {
+  margin: 1rem 0;
+  color: gray;
+}
+.reward-popup .reward .days {
+  font-size: 1.1rem;
+  color: gray;
+}
+.reward-popup .reward .days span {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.reward-popup .rewards .Mahogany {
+  opacity: 0.5;
+}
+.reward-popup .input-donation {
+  display: none;
+}
+.reward-popup .input-donation-block {
+  display: block;
+}
+.reward-popup .input-donation .pledge-amount {
+  text-align: center;
+  padding: 1.3rem;
+}
+.reward-popup .input-donation .pledge-enter {
+  color: gray;
+  font-weight: 500;
+}
+.reward-popup .input-donation .pledge-amount .amount {
+  display: inline-block;
+  position: relative;
+  margin-top: 1rem;
+}
+.reward-popup .input-donation .amount .dollar-sign {
+  position: absolute;
+  top: 0.52rem;
+  left: 1rem;
+  color: gray;
+}
+.reward-popup .input-donation input {
+  width: 6rem;
+  margin-right: 1rem;
+  border: 1px solid gray;
+  border-radius: 5rem;
+  padding: 0.6rem 0.8rem 0.6rem 1.8rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.reward-popup .input-donation input:focus {
+  outline: none;
+}
+.reward-popup .input-donation .btn {
+  border: none;
+  background-color: hsl(176, 50%, 47%);
+  padding: 0.7rem 1rem;
+  border-radius: 5rem;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+}
+.success {
+  background-color: white;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  box-shadow: 0 0 400px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  z-index: 2;
+  display: none;
+}
+.success-block {
+  display: block;
+}
+.success .title {
+  margin: 2rem 0 1rem;
+}
+.success .text {
+  color: gray;
+  margin-top: 1rem;
+}
+.success .btn {
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5rem;
+  background-color: hsl(176, 50%, 47%);
+  color: white;
+  margin-top: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.success .btn:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+@media (min-width: 640px) {
+  .header {
+    background-image: url("./images/image-hero-desktop.jpg");
+  }
+
+  .nav {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    width: auto;
+  }
+  .header .nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  .header .nav .nav-item a {
+    color: white;
+  }
+  .header .nav .nav-item {
+    padding: 0;
+  }
+  .header .hamburger,
+  .header .menu-close,
+  .header .nav hr {
+    display: none;
+  }
+  .back-bookmark .bookmark img {
+    margin-right: -2rem;
+  }
+  .back-bookmark .bookmark p {
+    display: block;
+  }
+  .donated-donors .container {
+    display: flex;
+    gap: 3rem;
+  }
+  .donated-donors .line {
+    width: 1px;
+    height: 5rem;
+    margin: 0;
+  }
+  .about-project .stand-pledge,
+  .about-project .days-reward {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-project .stand-pledge .pledge,
+  .about-project .days-reward .btn {
+    margin-top: 0;
+  }
+  .reward-popup .reward .description {
+    margin-left: 2rem;
+  }
+  .reward-popup .reward .days {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+  }
+  .reward-popup .reward .head-side {
+    display: flex;
+    gap: 1rem;
+  }
+  .reward-popup .reward .head-side .pledge {
+    margin-top: 0;
+  }
+  .reward-popup .reward .pledge-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reward-popup .reward .pledge-amount .amount {
+    margin-top: 0;
+  }
+}
